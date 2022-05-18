@@ -1,0 +1,41 @@
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
+
+
+str = "Yai2odi-sdft7lfgfd"    
+letters = []
+all_letters = []
+reversed_letters = []
+
+for letter in str:
+    if letter.isalpha():
+        letters.append(letter)
+        
+for lettr in str:
+    all_letters.append(lettr)
+    
+
+k = len(str) -1
+while k > -1:
+    if str[k].isalpha():
+        reversed_letters += all_letters[k]
+    k -= 1
+    
+k = len(str) -1
+result = []
+while k > -2:
+    if not str[k].isalpha():
+        reversed_letters.insert(k, str[k])
+        print(str[k], "working")
+        
+        print(reversed_letters)
+    k -= 1
+
+result = ""
+result = result.join(reversed_letters)
+
+
+print(str)
+print(result)
+
+
