@@ -1,0 +1,22 @@
+import os
+
+
+def main():
+    increment = 1
+    path = "/home/oluwatosin/Documents/test/"
+    file_list = os.listdir(path)
+    
+    for file_name in file_list:
+        print(file_name)
+        new_file_name = "book" + str(increment) + ".pdf"
+        print(new_file_name)
+        file_source = path + file_name
+        file_destination = path+ new_file_name
+        os.rename(file_source, file_destination)
+        increment = increment + 1
+    
+if __name__ == "__main__":
+    main()
+
+
+
