@@ -1,2 +1,3 @@
-print("God is great")
+for I in range:
+    print("God is great")
 
